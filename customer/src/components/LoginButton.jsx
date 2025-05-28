@@ -13,7 +13,7 @@ function LoginButton({ onSuccess }) {
       const idToken = await result.user.getIdToken();
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/google",
+        "https://game-cart-backend.vercel.app/",
         {
           token: idToken,
         }
