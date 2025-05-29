@@ -11,6 +11,15 @@ app.use(express.json());
 
 app.use("/api", authRoutes);
 
+app.get("/", (req,res) => {
+  res.json({
+    message: "Success.",
+    Name: "Manish Kumar",
+    Phone: "+916377014168",
+    Email: "manishkumar106033@gmail.com",
+  })
+})
+
 mongoose.connect(process.env.MONGO_URI, {
 }).then(() => {
   console.log("MongoDB connected");
