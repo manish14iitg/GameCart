@@ -1,1 +1,2 @@
 backend/config/firebase-service-account.json
+backend/.env
